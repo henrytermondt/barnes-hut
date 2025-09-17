@@ -11,4 +11,5 @@ void main() {
     vec4 point = texture(points, tpos / pointsDim);
 
     gl_Position = vec4((point.xy * 2.0 - 1.0) * vec2(1, -1), 0, 1);
+    gl_PointSize = 1.0;
 }
